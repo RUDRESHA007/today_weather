@@ -1,0 +1,166 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --blue: #0951ed65;
+    --grey: #6B7280;
+    --pink: #dc51976c;
+    --red: rgba(185, 43, 43, 0.363);
+    --purple: #8a5cf679;
+    --light: #EEE;
+    --sunny: https: //media.istockphoto.com/vectors/walking-dog-woman-on-nature-pet-owner-two-cute-dogs-and-girl-in-park-vector-id1283372696?k=20&m=1283372696&s=612x612&w=0&h=9LBi-QgdQQFY84hih6VyJgqqceoxv7CDoquNjDqxfJk=
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100Vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(to right, var(--blue), var(--pink), var(--red), var(--purple));
+}
+
+.container {
+    width: 25rem;
+    height: 20rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: start;
+    border-radius: 1rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: black .5rem .5rem 5rem -1rem;
+
+}
+
+.container .search_section {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+}
+
+.container .headding {
+    padding: 0 0 1rem 0;
+    color: rgb(132, 132, 214);
+}
+
+
+.container .search_section .search {
+    width: 100%;
+    height: 2rem;
+    padding: 1rem 5rem 1rem 1rem;
+    font-size: .9rem;
+    border-radius: .5rem;
+    outline: none;
+    border: .05rem solid black;
+
+}
+
+.container .search_section .search_btn {
+    width: 5rem;
+    border: none;
+    outline: none;
+    height: 2.1rem;
+    font-size: .9rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    right: .0rem;
+    top: .0rem;
+    position: absolute;
+    border: .05rem solid black;
+    color: #fff;
+    background:rgb(216 16 234);
+    transition: .5s ease;
+}
+
+.container .search_section .search_btn:hover {
+    opacity: 0.8;
+}
+
+.container .weather_section {
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2.5rem;
+    position: relative;
+    top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.container .weather_section .img {
+   
+    position: absolute;
+    left: 5rem;
+    width: 11rem ;
+    top:0rem;
+    
+}
+.container .weather_section .timing {
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+    color: rgb(216, 16, 234) ;
+    font:bold ;
+    z-index: 1;
+
+    
+}
+.time{   
+    font-size: 1.3rem;
+    color: rgb(216, 16, 234) ;
+    position: absolute;
+    top: 10.5rem;
+    left: 8rem;
+    /* font:bold ;  */
+}
+
+.container .weather_section .city {
+    text-align: center;
+    font-size: 1.1rem;
+ 
+}
+
+.container .weather_section .weather {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.container .weather_section  .city{
+    color: rgb(255, 140, 0);
+    margin-top: -3rem;
+    animation: rud infinite 2s ;
+
+}
+
+.container .weather_section  .tempreture{
+    color: rgb(255, 0, 195);
+    animation: rud infinite 2s ;
+text-shadow: solid black 1rem 1rem;
+}
+
+@keyframes rud {
+    0%   {transform: scale(1);}
+    25% {transform: scale(.9);}   
+     50% {transform: scale(.9);}
+     100% {transform: scale(1);}
+
+
+
+  }                                              
