@@ -30,9 +30,9 @@ body {
 }
 
 .container {
-    width: 25rem;
-    height: 20rem;
-    padding: 1.5rem;
+    width: 30rem;
+    /* height: 20rem; */
+    padding: 2.5rem;
     display: flex;
     justify-content: start;
     border-radius: 1rem;
@@ -40,7 +40,6 @@ body {
     flex-direction: column;
     background-color: #fff;
     box-shadow: black .5rem .5rem 5rem -1rem;
-
 }
 
 .container .search_section {
@@ -58,29 +57,32 @@ body {
 
 .container .search_section .search {
     width: 100%;
-    height: 2rem;
+    height: 3rem;
     padding: 1rem 5rem 1rem 1rem;
     font-size: .9rem;
     border-radius: .5rem;
     outline: none;
-    border: .05rem solid black;
-
+    border: none;
+    background: #cfc1c1;
 }
 
 .container .search_section .search_btn {
-    width: 5rem;
+    width: 6rem;
     border: none;
+    font-family: 'popins',sans-serif;
     outline: none;
-    height: 2.1rem;
-    font-size: .9rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
     right: .0rem;
     top: .0rem;
     position: absolute;
-    border: .05rem solid black;
+    /* border: .05rem solid black; */
     color: #fff;
     background:rgb(216 16 234);
+    outline: none;
     transition: .5s ease;
 }
 
@@ -103,12 +105,10 @@ body {
 
 }
 .container .weather_section .img {
-   
-    position: absolute;
-    left: 5rem;
-    width: 11rem ;
-    top:0rem;
-    
+   position: absolute;
+   left: 5rem;
+   width: 13rem;
+   top: -1rem;
 }
 .container .weather_section .timing {
     font-weight: 100;
@@ -121,12 +121,12 @@ body {
 
     
 }
-.time{   
+.time{
     font-size: 1.3rem;
-    color: rgb(216, 16, 234) ;
+    color: rgb(216, 16, 234);
     position: absolute;
     top: 10.5rem;
-    left: 8rem;
+    left: 9rem;
     /* font:bold ;  */
 }
 
